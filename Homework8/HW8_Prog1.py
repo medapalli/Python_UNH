@@ -9,6 +9,7 @@ class Animal():
          print("I will give you 3 hints, guess what animal I am\n")
          while True:
              if (self.name=="Elephant"):
+                 
                  print("I have exceptional memory")
                  str1=input("Who am I?:")
                  if (str1=="Elephant" or str1=="elephant"):
@@ -32,8 +33,12 @@ class Animal():
                      
                  else:
                      print("I'm out of hints! The answer is: Elephant\n")
+                 break
           
              elif (self.name=="Tiger"):
+                  
+                  
+                   
                  print("I am the biggest cat")
                  str1=input("Who am I?:")
                  if (str1=="Tiger" or str1=="tiger"):
@@ -54,7 +59,10 @@ class Animal():
                      print("You got it! I am  tiger\n")
                  else:
                      print("I'm out of hints! The answer is: Tiger\n")
-             else: 
+                 break
+                
+             elif (self.name=="Bat"):
+                 
                  print("I use echo-location")
                  str1=input("Who am I?:")
                  if (str1=="Bat" or str1=="bat"):
@@ -75,6 +83,7 @@ class Animal():
                      print("You got it! I am  Bat\n")
                  else:
                      print("I'm out of hints! The answer is: Bat")
+                 break
        
 e = Animal("Elephant")
 t = Animal("Tiger")
